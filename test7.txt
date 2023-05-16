@@ -18,7 +18,6 @@ q
 r
 s
 a b 0
-b c 0
-a e 1
+a k 1
 
 
