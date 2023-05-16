@@ -217,20 +217,20 @@ int main() {
         }
     }
 
-    vector<int> table={0}; //since its circular, we can chose any person as the first seated in the table
-    vector<bool> isSeated(totalDiplomats, false);
-
-    solution solve;
-    solve.foundArrangement = false; //important, as this helps in pruning
-
-    solve.findSeatingArrangement(table, totalDiplomats, isSeated,  relationship);
-
     cout<<"Diplomats: ";
     for(int i=0; i<sortedDiplomats.size(); i++){ //printing all the diplomats in sorted order
         cout<<sortedDiplomats[i];
         if(i<sortedDiplomats.size()-1) cout<<", ";
     }
     cout<<endl;
+
+    vector<int> table={0}; //since its circular, we can chose any person as the first seated in the table
+    vector<bool> isSeated(totalDiplomats, false);
+    
+    solution solve;
+    solve.foundArrangement = false; //important, as this helps in pruning
+
+    solve.findSeatingArrangement(table, totalDiplomats, isSeated,  relationship);
 
     cout<<"Seating Arrangement: ";
     if(solve.foundArrangement){ // printing the final result
