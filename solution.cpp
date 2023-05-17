@@ -29,7 +29,7 @@ class solution{
                     
                 }
                 else{
-                        bool seatTheDiplomat = false; // this is used to determine if during iteration the diploamt can we seated in the current table or not based on the problem constraints
+                        bool seatTheDiplomat = false; // this is used to determine if during iteration the diploamt can be seated in the current table or not based on the problem constraints
                         int tableSize = table.size();
 
                 
